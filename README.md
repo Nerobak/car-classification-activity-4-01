@@ -76,6 +76,88 @@ This repository fulfills the assignment requirement:
 
 ---
 
-## ✉️ Contact  
-If you have questions or feedback, feel free to reach out.
+
+
+⭐ Activity 4.02 — Random Forest & Extra Trees Classification
+
+In this activity, I optimized the classifier built in Activity 4.01 by applying two ensemble learning methods:
+
+Models Used
+
+RandomForestClassifier
+
+ExtraTreesClassifier
+
+Both models were trained using the categorical car evaluation dataset from Packt:
+
+Dataset URL:
+https://raw.githubusercontent.com/PacktWorkshops/The-Applied-Artificial-Intelligence-Workshop/master/Datasets/car.csv
+
+Steps Completed
+
+Reused the dataset preprocessing from Activity 4.01
+
+Split the data (90% training, 10% testing)
+
+Trained the Random Forest model with:
+
+n_estimators=100
+
+max_depth=6
+
+random_state=168
+
+Evaluated the Random Forest:
+
+Confusion matrix
+
+Classification report
+
+Feature importance
+
+Trained the Extra Trees classifier with the same hyperparameters
+
+Evaluated the Extra Trees classifier:
+
+Confusion matrix
+
+Classification report (using zero_division=0 to avoid warnings)
+
+Feature importance
+
+Key Results
+Random Forest
+
+Accuracy: 0.87
+
+Most important features:
+
+safety
+
+persons
+
+buying
+
+Extra Trees
+
+Accuracy: 0.85
+
+Most important features:
+
+safety
+
+persons
+
+buying
+
+Both models agree that safety and number of persons are the strongest predictors of car acceptability.
+
+
+➡️ Activity_4_02_RandomForest_ExtraTrees.ipynb
+
+⭐ Summary
+
+This activity demonstrates how ensemble methods such as Random Forest and Extra Trees can outperform simple decision trees. Feature importance helps interpret which car attributes matter most for classification.
+
+🟢 End of README Addition
 
